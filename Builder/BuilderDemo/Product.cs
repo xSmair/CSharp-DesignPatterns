@@ -54,8 +54,6 @@ public class Product
         public Product Build()
         {
             var product = new Product(this);
-            if(_optionalD== null)
-                throw new ArgumentNullException("OptionalD must be set if you want to use it");
             if(_optionalC<0)
                 throw new ArgumentException("OptionalC must be greater than 0");
             if (_optionalD.Equals(""))
